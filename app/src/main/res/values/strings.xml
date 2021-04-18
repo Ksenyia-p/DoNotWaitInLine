@@ -4,4 +4,18 @@
     <string name="name">enter name</string>
     <string name="onward">onward</string>
     <string name="drink_want">Hello what kind of drink do you want?</string>
+    <string name="drink_add">What do you want to add?</string>
+    <string name="Tea">Tea</string>
+    <string name="Coffee">Coffee</string>
+    <string-array name="coffee">
+        <item>Latte</item>
+        <item>capuchino</item>
+        <item>expresso</item>
+        <item>americano</item>
+    </string-array>
+    <string-array name="tea">
+        <item>black</item>
+        <item>green</item>
+        <item>white</item>
+    </string-array>
 </resources>
