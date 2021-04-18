@@ -2,9 +2,11 @@ package com.example.donotwaitinline;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
@@ -16,5 +18,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Oder(View view) {
+        String name=editText.getText().toString().trim();
+        if(!name.isEmpty()){
+            Intent intent=new Intent(this,Drinks.class);
+            intent.putExtra("name",name);
+
+            startActivity(intent);}
+        else {
+            Toast.makeText(this,"Enter your name",Toast.LENGTH_SHORT).show();
+
+        }
     }
 }
