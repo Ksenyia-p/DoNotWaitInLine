@@ -3,4 +3,5 @@
     <string name="welcome">welcome to our cafe</string>
     <string name="name">enter name</string>
     <string name="onward">onward</string>
+    <string name="drink_want">Hello what kind of drink do you want?</string>
 </resources>
