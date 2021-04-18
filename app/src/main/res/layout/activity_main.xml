@@ -12,12 +12,50 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="293dp"
         tools:layout_editor_absoluteY="230dp"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+    android:background="@color/beige">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="413dp"
+        android:layout_height="236dp"
+        android:layout_weight="1"
+        android:contentDescription="logotip"
         app:srcCompat="@drawable/ert" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textSize="45dp" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="fill|fill_vertical"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:onClick="Oder"
+        android:layout_margin="10dp"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/nuts"
+        android:textColor="@color/white"
+        android:text="@string/onward"
+        android:textSize="36dp" />
 </LinearLayout>
 
