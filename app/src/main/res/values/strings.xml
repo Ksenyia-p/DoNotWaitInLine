@@ -22,4 +22,7 @@
         <item>Green</item>
         <item>White</item>
     </string-array>
+    <string name="oder">Oder</string>
+    <string name="cake_want">What kind of cake do you want?</string>
+    <string name="napoleon">Napoleon</string>
 </resources>

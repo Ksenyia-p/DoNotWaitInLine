@@ -82,6 +82,10 @@ public class Drinks extends AppCompatActivity {
         String result=String.format("Client %s make the oder %s, with %s and type is %s",
                 name,drink,additions.toString(),typeOfDrink);
         Log.d("result",result);
+        Intent intent=new Intent(this,Cake.class);
+        intent.putExtra("result",result);
+
+        startActivity(intent);
 
     }
 }

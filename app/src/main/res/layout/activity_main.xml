@@ -31,6 +31,7 @@
         android:layout_margin="10dp"
         android:layout_weight="1"
         android:gravity="center"
+        android:textStyle="bold"
         android:text="@string/welcome"
         android:textColor="@color/lightBroun"
         android:textSize="45dp" />
