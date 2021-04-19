@@ -22,9 +22,9 @@ public class Drinks extends AppCompatActivity {
         radioButtonT=findViewById(R.id.radioButtonTea);
         spinnerC=findViewById(R.id.spinnerCoffe);
         spinnerT=findViewById(R.id.spinnerTea);
-        
+
     }
-    public void Oder(View view){
+    public void Drink(View view){
         boolean checkedT = radioButtonT.isChecked();
         boolean checkedC = radioButtonC.isChecked();
         if (checkedT==aBooleanT){
@@ -35,4 +35,7 @@ public class Drinks extends AppCompatActivity {
             spinnerC.setVisibility(View.VISIBLE);
         }
     }
-   }
+
+    public void Onward(View view) {
+    }
+}
