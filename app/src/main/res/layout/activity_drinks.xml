@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewDrinkAdd">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxSugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -93,7 +93,7 @@
             android:textSize="20dp" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/checkBoxMilk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -102,7 +102,7 @@
             android:textSize="20dp" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/checkBoxLemon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -127,7 +127,7 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Spinner
-        android:id="@+id/spinnerCoffe"
+        android:id="@+id/spinnerCoffee"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -157,7 +157,7 @@
             android:onClick="Onward"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinnerCoffe"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCoffee"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
