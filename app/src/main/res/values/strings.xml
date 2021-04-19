@@ -26,4 +26,6 @@
     <string name="cake_want">What kind of cake do you want?</string>
     <string name="napoleon">Napoleon</string>
     <string name="panna">Panna Cotta</string>
+    <string name="tiramisu">Tiramisu</string>
+    <string name="chees">Cheesecake</string>
 </resources>
