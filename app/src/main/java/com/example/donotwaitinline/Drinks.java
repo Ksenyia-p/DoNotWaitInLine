@@ -22,8 +22,11 @@ public class Drinks extends AppCompatActivity {
         radioButtonT=findViewById(R.id.radioButtonTea);
         spinnerC=findViewById(R.id.spinnerCoffe);
         spinnerT=findViewById(R.id.spinnerTea);
-        boolean checkedT = (radioButtonT).isChecked();
-        boolean checkedC = (radioButtonC).isChecked();
+        
+    }
+    public void Oder(View view){
+        boolean checkedT = radioButtonT.isChecked();
+        boolean checkedC = radioButtonC.isChecked();
         if (checkedT==aBooleanT){
             spinnerT.setVisibility(View.VISIBLE);
             spinnerC.setVisibility(View.INVISIBLE);
