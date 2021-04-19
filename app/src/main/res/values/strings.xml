@@ -7,15 +7,19 @@
     <string name="drink_add">What do you want to add?</string>
     <string name="Tea">Tea</string>
     <string name="Coffee">Coffee</string>
+    <string name="drink_type">Choose type of drink</string>
+    <string name="sugar">Sugar</string>
+    <string name="milk">Milk</string>
+    <string name="lemon">Lemon</string>
     <string-array name="coffee">
         <item>Latte</item>
-        <item>capuchino</item>
-        <item>expresso</item>
-        <item>americano</item>
+        <item>Capuchino</item>
+        <item>Expresso</item>
+        <item>Americano</item>
     </string-array>
     <string-array name="tea">
-        <item>black</item>
-        <item>green</item>
-        <item>white</item>
+        <item>Black</item>
+        <item>Green</item>
+        <item>White</item>
     </string-array>
 </resources>
