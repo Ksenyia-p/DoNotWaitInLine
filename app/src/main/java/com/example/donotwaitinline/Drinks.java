@@ -84,6 +84,7 @@ public class Drinks extends AppCompatActivity {
         Log.d("result",result);
         Intent intent=new Intent(this,Cake.class);
         intent.putExtra("result",result);
+        intent.putExtra("name",name);
 
         startActivity(intent);
 
