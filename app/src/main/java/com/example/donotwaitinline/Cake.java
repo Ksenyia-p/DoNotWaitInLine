@@ -3,6 +3,7 @@ package com.example.donotwaitinline;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -45,12 +46,11 @@ public class Cake extends AppCompatActivity {
         }
         Intent intent=getIntent();
         result=intent.getStringExtra("result");
-        String oder;
-        if (add.equals("null")){
-         oder=String.format("%s ",result);
-        }else {
-             oder=String.format("%s As well as %s",result,add.toString());
-        }
+        String oder=String.format("%s As well as %s",result,add.toString());
+        Intent gIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:kseniapetrashko16@gmail.com"));
+        startActivity(gIntent);
+
+
 
     }
 }
