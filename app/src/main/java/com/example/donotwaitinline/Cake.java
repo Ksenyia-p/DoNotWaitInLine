@@ -19,6 +19,9 @@ public class Cake extends AppCompatActivity {
     CheckBox checkBoxNapol;
     StringBuilder add=new StringBuilder();
     String clientName;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +33,7 @@ public class Cake extends AppCompatActivity {
         checkBoxTira=findViewById(R.id.checkBoxTira);
         Intent intent=getIntent();
         result=intent.getStringExtra("result");
-        clientName=intent.getStringExtra("name");
+
 
     }
 
@@ -47,15 +50,13 @@ public class Cake extends AppCompatActivity {
         if (checkBoxChees.isChecked()){
             add.append("cheesecake").append("  ");
         }
-        Toast.makeText(this,add.toString(), Toast.LENGTH_LONG).show();
        String oder=String.format("%s As well as %s",result,add.toString());
         Intent intent2=new Intent(this,Oder.class);
         intent2.putExtra("oder",oder);
         startActivity(intent2);
-       // Intent gIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:kseniapetrashko16@gmail.com"));
-       // intent.putExtra(Intent.EXTRA_SUBJECT,"Oder "+ clientName);
-      //  intent.putExtra(Intent.EXTRA_TEXT,oder);
-        //startActivity(gIntent);
+
+
+
 
 
 
