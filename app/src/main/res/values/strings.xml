@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DoNotWaitInLine</string>
+    <string name="app_name">Do not wait in line</string>
     <string name="welcome">welcome to our cafe</string>
     <string name="name">enter name</string>
     <string name="onward">onward</string>
@@ -22,7 +22,7 @@
         <item>Green</item>
         <item>White</item>
     </string-array>
-    <string name="oder">Oder</string>
+    <string name="oder">Order</string>
     <string name="cake_want">What kind of cake do you want?</string>
     <string name="napoleon">Napoleon</string>
     <string name="panna">Panna Cotta</string>

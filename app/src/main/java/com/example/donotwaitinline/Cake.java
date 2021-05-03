@@ -33,6 +33,7 @@ public class Cake extends AppCompatActivity {
         checkBoxTira=findViewById(R.id.checkBoxTira);
         Intent intent=getIntent();
         result=intent.getStringExtra("result");
+        clientName=intent.getStringExtra("drinkName");
 
 
     }
@@ -53,6 +54,7 @@ public class Cake extends AppCompatActivity {
        String oder=String.format("%s As well as %s",result,add.toString());
         Intent intent2=new Intent(this,Oder.class);
         intent2.putExtra("oder",oder);
+        intent2.putExtra("cakeName",clientName);
         startActivity(intent2);
 
 

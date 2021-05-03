@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class Oder extends AppCompatActivity {
     TextView textView;
-    
-  String  oder;
+    String  oder;
+    String name;
 
 
 
@@ -25,6 +25,7 @@ public class Oder extends AppCompatActivity {
         textView=findViewById(R.id.textView2);
         Intent  intent=getIntent();
         oder=intent.getStringExtra("oder");
+        name=intent.getStringExtra("cakeName");
 
 
        if (oder==null){
@@ -36,7 +37,7 @@ public class Oder extends AppCompatActivity {
 
     public void Config(View view) {
         Intent gIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:kseniapetrashko16@gmail.com"));
-        gIntent.putExtra(Intent.EXTRA_SUBJECT,"Oder ");
+        gIntent.putExtra(Intent.EXTRA_SUBJECT,"Oder "+ name);
         gIntent.putExtra(Intent.EXTRA_TEXT,oder);
         startActivity(gIntent);
     }

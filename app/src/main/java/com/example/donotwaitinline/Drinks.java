@@ -79,12 +79,12 @@ public class Drinks extends AppCompatActivity {
         if (checkBoxLemon.isChecked()){
             additions.append("lemon").append("  ");
         }
-        String result=String.format("Client %s make the oder %s, with %s and type is %s.",
+        String result=String.format("Client %s make the order %s, with %s and type is %s.",
                 name,drink,additions.toString(),typeOfDrink);
         Log.d("result",result);
         Intent intent=new Intent(this,Cake.class);
         intent.putExtra("result",result);
-        intent.putExtra("name",name);
+        intent.putExtra("drinkName",name);
 
         startActivity(intent);
 
