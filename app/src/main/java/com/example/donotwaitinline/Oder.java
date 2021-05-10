@@ -13,11 +13,6 @@ public class Oder extends AppCompatActivity {
     String  oder;
     String name;
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +31,11 @@ public class Oder extends AppCompatActivity {
     }
 
     public void Config(View view) {
-        Intent gIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:kseniapetrashko16@gmail.com"));
-        gIntent.putExtra(Intent.EXTRA_SUBJECT,"Oder "+ name);
+        Intent gIntent=new Intent(Intent.ACTION_SEND);
+        gIntent.putExtra(Intent.EXTRA_EMAIL,"kseniapetrashko16@gmail.com");
+        gIntent.putExtra(Intent.EXTRA_SUBJECT,"Order "+ name);
         gIntent.putExtra(Intent.EXTRA_TEXT,oder);
-        startActivity(gIntent);
+        gIntent.setType("message/rfc822");
+        startActivity(Intent.createChooser(gIntent,"title"));
     }
 }
